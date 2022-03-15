@@ -2,14 +2,15 @@
 
 int main()
 {
-    printf("Number of eggs: ");
+    char ASCII;
+    printf("Character: ");
+    scanf("%c", &ASCII);
+    printf("%i\n", ASCII);
 
-    int eggs;
-    scanf("%i",&eggs);
-
-    double dozen = eggs / 12;
-    printf("Number os dozens: %f",dozen);
-
+    int integer;
+    printf("Please enter a integer btw 0 - 127: ");
+    scanf("%i", &integer);
+    printf("%c\n", integer);
     return 0;
 }
 

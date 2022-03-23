@@ -1,20 +1,15 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-void doublevalue()
-{
-    
-}
-
 int main() 
 {
+    int a =5;
+    int *p = &a;
     
-    int x;
-    printf("Value to double: ");
-    scanf("%d",&x);
-    doublevalue(x);
-    printf("Double value is: %d",x);
+    //p -> address 
+    //*p -> value of address
 
+    printf("pointer: %d , pointer + 1: %d",p,(p+1));
     return 0;
 }
 

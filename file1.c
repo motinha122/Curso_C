@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int doublevalue(int x)
+void doublevalue(int *x)
 {
-    x = x * 2;
-    return x;
+    *x *=2;
 }
 
 int main() 
@@ -12,7 +11,8 @@ int main()
     int x;
     printf("Value to double: ");
     scanf("%d",&x);
-    printf("Double value is: %d",doublevalue(x));
+    doublevalue(&x);
+    printf("Double value is: %d",x);
     return 0;
 }
 

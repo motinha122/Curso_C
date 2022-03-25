@@ -1,23 +1,20 @@
 #include <stdio.h>
 
-void doubleElements(int a[],int size)
+void printChar(char* C)
 {
-    for (int i =0; i < size ;i++)
+    while(*C != '\0')
     {
-        a[i] *=2;
+        printf("%c\n",*C);
+        C++;
     }
 }
 
 int main() 
 {
-    int A[] = {1,2,3,4,5};
-    int size = sizeof(A)/sizeof(A[0]);
-    doubleElements(A,size);
-    for (int i =0;i < size;i++)
-    {
-        printf("%d ",A[i]);
-        printf("%d\n", &A+i);
-    }
+    char c1[20];
+    printf("Type ur name: ");
+    scanf("%s",c1);
+    printChar(c1);
     return 0;
 }
 

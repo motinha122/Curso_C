@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main()  //Function pointer 
+int main()
 {
-
+  
+  
+    system("pause");
     return 0;
 }
-

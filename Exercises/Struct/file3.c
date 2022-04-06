@@ -1,14 +1,14 @@
 //Struct with pointers 
 
 #include <stdio.h>
-#include <stdlib.h> //lib to use malloc and calloc
+#include <stdlib.h>
 
 typedef struct InfoStudents 
 {
-    char* name;
-    char* surname;
-    char* class;
-    char* address;
+    char name[20];
+    char surname[20];
+    char class[10];
+    char address[200];
 } Student;
 
 void access_students_infos(Student const *stu)
